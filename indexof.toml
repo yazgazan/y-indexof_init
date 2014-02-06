@@ -1,0 +1,39 @@
+
+Listen = "localhost:1224"
+Root = "."
+# Root = "www"
+# DownloadPrefix = "www"
+
+[Types.image]
+Exts = [".png", ".jpg", ".jpeg", ".gif"]
+
+[Types.video]
+Exts = [".avi", ".mp4", ".mkv", ".flv"]
+Image = "/_/images/video.png"
+
+[Types.music]
+Exts = [".mp3", ".ogg", ".flac"]
+Image = "/_/images/music.png"
+
+[Types.txt]
+Exts = [".txt", ".list"]
+
+[Types.txt.Headers]
+content-type = ["text/html"]
+
+[Type.sourcecode]
+Exts = [".go", ".html", ".sh"]
+Image = "/_/images/code.png"
+
+[Types.sourcecode.Headers]
+content-type = ["text/plain"]
+
+[Types.Default]
+Image = "/_/images/default.png"
+
+[Types.Default.Headers]
+#content-disposition = ["attachment"]
+
+[Types.Folder]
+Image = "/_/images/folder.png"
+
